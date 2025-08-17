@@ -96,10 +96,10 @@ while True :
         for s in strengths:
             print("-", s)
 
-    again = input("Do you want to try again? 1:yes / 0:No : ")
-    try : 
-        if again != "1" : 
-            break 
-    except ValueError : 
-        print ("Invalid input !!! Please enter 1 0r 0 only.") 
+   again = input("Do you want to try again? 1:yes / 0:No : ").strip()
+    if again == "0":
+        break
+    elif again != "1":
+        print("Invalid input! Please enter 1 or 0 only.")
+
         
